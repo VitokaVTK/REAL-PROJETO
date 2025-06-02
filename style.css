@@ -116,36 +116,50 @@ body {
     align-items: center;
     text-align: center;
     background-color: #d0e4f5;
-    width: 15rem;
-    height: 30rem;
+    width: 250px;
+    height: 40rem;
     border-radius: 21px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 3rem;
+    gap: 10px;
 }
 
-.filtros input{
-    background-color: #ecf2f8;
-    border-radius: 10px;
-    border: transparent;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.filtros select{
-    border-radius: 10px;
-}
-.filtros button{
-    border-radius: 10px;
-    padding: 5px;
-    cursor: pointer;
-    color: #FFFFFF;
-    background-color: #1ABC9C;
-    border: transparent;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    transition: 0.5s ease;
+#preco-min{
+    color: #154D8C;
 }
 
-#botao:hover{
-    transform: scale(1.2);
+.filtros input[type="range"],
+.filtros select {
+  width: 150px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
 }
+.checkboxes {
+  display: grid;
+  grid-template-columns: 125px 125px;
+  gap: 2px;
+  margin-top: 10px;
+}
+.btn-aplicar {
+  background-color: #00c28b;
+  color: white;
+  border: none;
+  width: 150px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: scale 0.5s ease;
+}
+.btn-aplicar:hover {
+  scale: 1.1;
+}
+
+
 
 /*..................*/
 .configcard {
@@ -166,25 +180,35 @@ body {
     position: relative;
     
     background-color: #ecf2f8;
-    border-radius: 1.3125rem;
+    border-radius: 1.30rem;
     
     transition: 0.5s ease;
     overflow: hidden;
-    border: solid 0.00625rem rgb(221, 221, 221);
-}
+    border: none;
+    box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.3),         /* sombra externa */
+    inset 0 2px 4px rgba(0, 0, 0, 0.2); 
+    }
 
 .card:hover{
     
     background-color: #ecf2f8;
-    transform: scale(1.1);
+    transform: scale(1.1)
     
 }
 
-.card img{
-    width: 15.1875rem;
+.card .imgcard{
+    width: 15rem;
     
     display: block;
     border-radius: 1.3125rem;
+}
+.card .icon-card{
+    width: 15rem;
+    border-top: solid 0.15rem #333333;
+    border-bottom-left-radius: 1.30rem;
+    border-bottom-right-radius: 1.30rem;
+    margin-bottom: -23px;
 }
 
 .titulo_card{
@@ -197,52 +221,47 @@ body {
 .descricao img{
     width: 12.5rem;
 }
-.descricao{
-    position: relative;
-      
-    padding: 1.25rem;
-    background-color: #ecf2f8;
-    
-    transition: transform 0.4s ease;
-}
+
  /*...........*/
 
 footer{
-display: flex;
-justify-content: space-between;
-gap: 20rem;
-background-color: #0A2F5C;
-color: #FFFFFF;
-padding: 2rem 3rem;
-  
-}
-@media (max-width: 768px){
-    footer{
-        flex-direction: column;
-    }
-    .footer-lista ul{
-        flex-direction: column;
-    }
-}
-
-.footer-lista ul {
-  list-style: none;
-  display: flex;
-  gap: 3rem; 
-  padding-left: 4rem;
-}
-
-
-#listafoot  a {
-    text-decoration: none;
+    margin-top: 20px;
+    gap: 20rem;
+    padding: 40px 20px;
+    background-color: #0A2F5C;
     color: #FFFFFF;
-    
 }
 
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    color: #A0D2DB;
+}
 
 .footer-sobre{
-    
     text-align: center;
-    max-width: 25rem;
-    
+    max-width: 450px;
 }
+
+.footer-links li a{
+    color: #1ABC9C;
+    text-decoration: none;
+}
+
+.footer-copy {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #1E487C; 
+    font-size: 0.8em;
+    color: #A0D2DB; 
+}
+
+.img-redes{
+    width: 3.8rem;
+}
+
+
+    

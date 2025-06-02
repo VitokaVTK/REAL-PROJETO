@@ -9,7 +9,7 @@
 <body>
     <header>
         <a href="index.html">
-        <img id="logo" src="logo.png" alt="">
+        <img id="logo" src="Imagens/logo.png" alt="">
         </a>
         
         
@@ -17,7 +17,7 @@
     <menu id="menuhome">
         <nav>
             <ul id="navegacao">
-                <a href="index.html" style="color: #FFFFFF; text-decoration: none;">
+                <a href="home.html" style="color: #FFFFFF; text-decoration: none;">
                 <li class="box_lista">Início</li>
                 </a>
                 <a href="alugar.html" style="color: #FFFFFF; text-decoration: none;">
@@ -38,122 +38,176 @@
         <section>
             <div class="filtros">
                 <h2>Filtros</h2>
-                <form>
-                    <label>Preço máximo:</label>
-                    <input type="number"><br><br>
 
-                    <label >Quartos:</label>
-                    <select id="quartos">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    </select><br><br>
+  <label>Preço mínimo</label>
+  <input type="range" id="preco-min" min="0" max="1000000">
 
-                    <button type="submit" id="botao">Aplicar</button>
-                </form>
-            </div>
+  <label>Preço máximo</label>
+  <input type="range" id="preco-max" min="0" max="1000000">
+
+  <label>Quartos</label>
+  <select id="quartos">
+    <option>Qualquer</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4+</option>
+  </select>
+
+  <label>Banheiros</label>
+  <select id="banheiros">
+    <option>Qualquer</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3+</option>
+  </select>
+
+  <label>Vagas</label>
+  <select id="vagas">
+    <option>Qualquer</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3+</option>
+  </select>
+
+  <label>Tipo de imóvel</label>
+  <select id="tipo">
+    <option>Qualquer</option>
+    <option>Casa</option>
+    <option>Apartamento</option>
+    <option>Sobrado</option>
+  </select>
+
+  <label>Área (m²)</label>
+  <input type="range" id="area"  min="0" max="1000">
+
+  <div class="checkboxes">
+    <label><input type="checkbox"> Piscina</label>
+    <label><input type="checkbox" > Churrasqueira</label>
+    <label><input type="checkbox" > Jardim</label>
+    <label><input type="checkbox" > Varanda</label>
+  </div>
+
+  <button class="btn-aplicar">Aplicar</button>
+</div>
         </section>
 
         <section class="configcard">
             <article class="card">
-                <a href="#" style="text-decoration: none;"><img src="house2.jpg">
+                <a href="#" style="text-decoration: none;"><img class="imgcard" src="Imagens/casa 1.jpg">
                     <h1 class="titulo_card" style="overflow: hidden;">R$229.000</h1>
+                    <img class="icon-card" src="Imagens/Condomínio Residencial Jardim Imperial.png" alt="">
                     <div class="descricao"><img src="icons2.png" alt=""></div>
                 </a>
             </article>
             <article class="card">
-                <a href="#" style="text-decoration: none;"><img src="house2.jpg">
+                <a href="#" style="text-decoration: none;"><img class="imgcard" src="Imagens/casa 2.jpg">
                     <h1 class="titulo_card" style="overflow: hidden;">R$229.000</h1>
+                    <img class="icon-card" src="Imagens/Condomínio Residencial Jardim Imperial.png" alt="">
                     <div class="descricao"><img src="icons2.png" alt=""></div>
                 </a>
             </article>
             <article class="card">
-                <a href="#" style="text-decoration: none;"><img src="house2.jpg">
+                <a href="#" style="text-decoration: none;"><img class="imgcard" src="Imagens/casa 3.jpg">
                     <h1 class="titulo_card" style="overflow: hidden;">R$229.000</h1>
+                    <img class="icon-card" src="Imagens/Condomínio Residencial Jardim Imperial.png" alt="">
                     <div class="descricao"><img src="icons2.png" alt=""></div>
                 </a>
             </article>
             <article class="card">
-                <a href="#" style="text-decoration: none;"><img src="house2.jpg">
+                <a href="#" style="text-decoration: none;"><img class="imgcard" src="Imagens/casa 4.jpg">
                     <h1 class="titulo_card" style="overflow: hidden;">R$229.000</h1>
-                    <div class="descricao"><img src="icons2.png" alt=""></div>
-                </a>
-            </article>
-        </section>
-        <section class="configcard">
-            <article class="card">
-                <a href="#" style="text-decoration: none;"><img src="house2.jpg">
-                    <h1 class="titulo_card" style="overflow: hidden;">R$229.000</h1>
-                    <div class="descricao"><img src="icons2.png" alt=""></div>
-                </a>
-            </article>
-            <article class="card">
-                <a href="#" style="text-decoration: none;"><img src="house2.jpg">
-                    <h1 class="titulo_card" style="overflow: hidden;">R$229.000</h1>
-                    <div class="descricao"><img src="icons2.png" alt=""></div>
-                </a>
-            </article>
-            <article class="card">
-                <a href="#" style="text-decoration: none;"><img src="house2.jpg">
-                    <h1 class="titulo_card" style="overflow: hidden;">R$229.000</h1>
-                    <div class="descricao"><img src="icons2.png" alt=""></div>
-                </a>
-            </article>
-            <article class="card">
-                <a href="#" style="text-decoration: none;"><img src="house2.jpg">
-                    <h1 class="titulo_card" style="overflow: hidden;">R$229.000</h1>
+                    <img class="icon-card" src="Imagens/Condomínio Residencial Jardim Imperial.png" alt="">
                     <div class="descricao"><img src="icons2.png" alt=""></div>
                 </a>
             </article>
         </section>
         <section class="configcard">
             <article class="card">
-                <a href="#" style="text-decoration: none;"><img src="house2.jpg">
+                <a href="#" style="text-decoration: none;"><img class="imgcard" src="Imagens/casa 5.jpg">
                     <h1 class="titulo_card" style="overflow: hidden;">R$229.000</h1>
+                    <img class="icon-card" src="Imagens/Condomínio Residencial Jardim Imperial.png" alt="">
                     <div class="descricao"><img src="icons2.png" alt=""></div>
                 </a>
             </article>
             <article class="card">
-                <a href="#" style="text-decoration: none;"><img src="house2.jpg">
+                <a href="#" style="text-decoration: none;"><img class="imgcard" src="Imagens/casa 6.jpg">
                     <h1 class="titulo_card" style="overflow: hidden;">R$229.000</h1>
+                    <img class="icon-card" src="Imagens/Condomínio Residencial Jardim Imperial.png" alt="">
                     <div class="descricao"><img src="icons2.png" alt=""></div>
                 </a>
             </article>
             <article class="card">
-                <a href="#" style="text-decoration: none;"><img src="house2.jpg">
+                <a href="#" style="text-decoration: none;"><img class="imgcard" src="Imagens/casa 7.jpg">
                     <h1 class="titulo_card" style="overflow: hidden;">R$229.000</h1>
+                    <img class="icon-card" src="Imagens/Condomínio Residencial Jardim Imperial.png" alt="">
                     <div class="descricao"><img src="icons2.png" alt=""></div>
                 </a>
             </article>
             <article class="card">
-                <a href="#" style="text-decoration: none;"><img src="house2.jpg">
+                <a href="#" style="text-decoration: none;"><img class="imgcard" src="Imagens/casa 8.jpg">
                     <h1 class="titulo_card" style="overflow: hidden;">R$229.000</h1>
+                    <img class="icon-card" src="Imagens/Condomínio Residencial Jardim Imperial.png" alt="">
                     <div class="descricao"><img src="icons2.png" alt=""></div>
                 </a>
             </article>
         </section>
         <section class="configcard">
             <article class="card">
-                <a href="#" style="text-decoration: none;"><img src="house2.jpg">
+                <a href="#" style="text-decoration: none;"><img class="imgcard" src="Imagens/casa 9.jpg">
                     <h1 class="titulo_card" style="overflow: hidden;">R$229.000</h1>
+                    <img class="icon-card" src="Imagens/Condomínio Residencial Jardim Imperial.png" alt="">
                     <div class="descricao"><img src="icons2.png" alt=""></div>
                 </a>
             </article>
             <article class="card">
-                <a href="#" style="text-decoration: none;"><img src="house2.jpg">
+                <a href="#" style="text-decoration: none;"><img class="imgcard" src="Imagens/casa 10.jpg">
                     <h1 class="titulo_card" style="overflow: hidden;">R$229.000</h1>
+                    <img class="icon-card" src="Imagens/Condomínio Residencial Jardim Imperial.png" alt="">
                     <div class="descricao"><img src="icons2.png" alt=""></div>
                 </a>
             </article>
             <article class="card">
-                <a href="#" style="text-decoration: none;"><img src="house2.jpg">
+                <a href="#" style="text-decoration: none;"><img class="imgcard" src="Imagens/casa 11.jpg">
                     <h1 class="titulo_card" style="overflow: hidden;">R$229.000</h1>
+                    <img class="icon-card" src="Imagens/Condomínio Residencial Jardim Imperial.png" alt="">
                     <div class="descricao"><img src="icons2.png" alt=""></div>
                 </a>
             </article>
             <article class="card">
-                <a href="#" style="text-decoration: none;"><img src="house2.jpg">
+                <a href="#" style="text-decoration: none;"><img class="imgcard" src="Imagens/casa 12.jpg">
                     <h1 class="titulo_card" style="overflow: hidden;">R$229.000</h1>
+                    <img class="icon-card" src="Imagens/Condomínio Residencial Jardim Imperial.png" alt="">
+                    <div class="descricao"><img src="icons2.png" alt=""></div>
+                </a>
+            </article>
+        </section>
+        <section class="configcard">
+            <article class="card">
+                <a href="#" style="text-decoration: none;"><img class="imgcard" src="Imagens/casa 14.jpg">
+                    <h1 class="titulo_card" style="overflow: hidden;">R$229.000</h1>
+                    <img class="icon-card" src="Imagens/Condomínio Residencial Jardim Imperial.png" alt="">
+                    <div class="descricao"><img src="icons2.png" alt=""></div>
+                </a>
+            </article>
+            <article class="card">
+                <a href="#" style="text-decoration: none;"><img class="imgcard" src="Imagens/casa 15.jpg">
+                    <h1 class="titulo_card" style="overflow: hidden;">R$229.000</h1>
+                    <img class="icon-card" src="Imagens/Condomínio Residencial Jardim Imperial.png" alt="">
+                    <div class="descricao"><img src="icons2.png" alt=""></div>
+                </a>
+            </article>
+            <article class="card">
+                <a href="#" style="text-decoration: none;"><img class="imgcard" src="Imagens/casa 16.jpg">
+                    <h1 class="titulo_card" style="overflow: hidden;">R$229.000</h1>
+                    <img class="icon-card" src="Imagens/Condomínio Residencial Jardim Imperial.png" alt="">
+                    <div class="descricao"><img src="icons2.png" alt=""></div>
+                </a>
+            </article>
+            <article class="card">
+                <a href="#" style="text-decoration: none;"><img class="imgcard" src="Imagens/casa 17.jpg">
+                    <h1 class="titulo_card" style="overflow: hidden;">R$229.000</h1>
+                    <img class="icon-card" src="Imagens/Condomínio Residencial Jardim Imperial.png" alt="">
                     <div class="descricao"><img src="icons2.png" alt=""></div>
                 </a>
             </article>
@@ -166,25 +220,42 @@
     <footer>
         
 
-  <footer>
-  <div class="footer-lista">
-    <ul id="listafoot">
-      <li><a href="index.html">Início</a></li>
-      <li><a href="#">Serviços</a></li>
-      <li><a href="#">Contato</a></li>
-    </ul>
-  </div>
+  <footer class="comando-footer">
+        <div class="footer-container">
+            <div class="footer-sobre">
+                <h4>Sobre Nós</h4>
+                <p>A World é uma empresa que está a mais de 15 anos no mercado oferecendo melhor localização e acabamento para sua obra com menor prazo de entrega. Visite-nos!</p>
+            </div>
 
-  <div class="footer-sobre">
-    <h3>Sobre</h3>
-    <p>
-      A World Construções é especializada em obras residenciais e comerciais, oferecendo soluções completas com qualidade, segurança e pontualidade. Com uma equipe experiente e comprometida, transformamos projetos em realidade, sempre com foco na satisfação do cliente e na excelência dos acabamentos.
-    </p>
-  
-  </div>
+            <div class="footer-links">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
 
-  
-</footer>
+            <div class="footer-coluna footer-contato">
+                <h4>Contato</h4>
+                <p>Email: World.emp@hotmail.com</a></p>
+                <p>Telefone: (96) 99186-2605</p>
+                <p>Endereço: Avenida Pedro Lazarino 54B, Macapá, Brasil</p>
+            </div>
+
+            <div class="footer-coluna">
+                <h4>Siga-nos</h4>
+                <div class="footer-redes-sociais">
+                    <a href="https://www.instagram.com/worldconstrucoes?igsh=ZXpjcjU0bXdnMW5o"><img class="img-redes" src="Imagens/instagram.png"></a>
+                    <a href="https://www.facebook.com/Worldcconstrucao"><img class="img-redes" src="Imagens/facebook.png"></a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2025 Vila Sézamo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
