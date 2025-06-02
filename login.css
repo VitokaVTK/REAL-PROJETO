@@ -101,6 +101,7 @@ body {
     cursor: pointer;
     background-color: #1ABC9C;
     color: #FFFFFF;
+    z-index: 4;
     
 }
 
@@ -110,6 +111,8 @@ body {
     font-size: 12px;
     text-decoration: none;
     color: #0A2F5C;
+    cursor: pointer;
+    z-index: 4;
 }
 
 

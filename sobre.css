@@ -4,6 +4,12 @@
 }
 
 
+
+
+
+
+
+
 header{
     display: flex;
     
@@ -15,23 +21,6 @@ header{
     header{
         width: 100%;
     }
-}
-
-.irlogin {
-  position: absolute;
-  top: 1rem;
-  right: 2rem;
-  background-color: #00b386;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.irlogin:hover {
-  background-color: #009970;
 }
 
 #logo{ /*Mexe na logo*/
@@ -108,76 +97,52 @@ body {
     text-decoration: none;
     color: #FFFFFF;
 }
-
-
-
-/*..................*/
-
-.container-produto{
-    max-width: 1000px;
-      margin: 2rem auto;
-      background-color: white;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+/* Conteudo princi*/
+.sobre-nos {
+  padding: 40px 20px;
 }
 
-.display-fotos {
-    display: flex;
-    gap: 1rem;
-    overflow-x: auto;
-    margin-bottom: 1.5rem;
+.sobre-box {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.display-fotos img {
-    width: 300px;
-    border-radius: 10px;
+.logo-sobre {
+  width: 240px;
+  display: block;
+  margin: 0 auto 20px;
 }
 
-.info {
-    margin-bottom: 2rem;
+h1, h2 {
+  text-align: center;
+  color: #003366;
 }
 
-.adicionais {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
-    margin-top: 1rem;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-.box-informacoes {
-    background-color: #f0f0f0;
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
+ul li {
+  margin-bottom: 8px;
 }
 
-.preco {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-top: 1rem;
-    color: #0b2c4d;
+.diferenciais li {
+  background-color: #e7f4ee;
+  padding: 8px;
+  border-radius: 6px;
 }
 
-.botao-whats{
-    display: inline-block;
-    margin-top: 1.5rem;
-    padding: 0.75rem 1.5rem;
-    background-color: #00b386;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: all 0.7s;
-}
-.botao-whats:hover{
-    
-    transform: scale(1.1);
-}
 
-/*......................*/
 
+
+
+/** Footer **/
 footer{
-    margin: 0;
     margin-top: 20px;
     gap: 20rem;
     padding: 40px 20px;
@@ -185,7 +150,7 @@ footer{
     color: #FFFFFF;
 }
 
-.footer-subcmd{
+.footer-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -215,3 +180,4 @@ footer{
 .img-redes{
     width: 3.8rem;
 }
+

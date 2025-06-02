@@ -23,6 +23,23 @@ header{
     }
 }
 
+.irlogin {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  background-color: #00b386;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.irlogin:hover {
+  background-color: #009970;
+}
+
 #logo{ /*Mexe na logo*/
     
     width: 189px;
@@ -121,7 +138,7 @@ body {
     border-radius: 21px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 3rem;
-    gap: 10px;
+    gap: 5px;
 }
 
 #preco-min{
@@ -216,10 +233,36 @@ body {
     padding-left: 0.9375rem;
     color: #333333;
     transition: transform 0.7s ease;
+    font-size: 16px;
 }
 
-.descricao img{
-    width: 12.5rem;
+.descricao {
+  position: relative;
+  width: fit-content;
+}
+
+.icon-card {
+  display: block;
+  width: 100%;
+}
+
+.divspan {
+  position: absolute;
+  top: 10px; /* ajusta verticalmente */
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10px;
+  font-weight: bold;
+  color: #000000;
+  font-size: 14px;
+  pointer-events: none;
+  transform: translateX(-22px);
+}
+
+.divspan span {
+  position: relative;
 }
 
  /*...........*/
@@ -232,7 +275,7 @@ footer{
     color: #FFFFFF;
 }
 
-.footer-container{
+.footer-subcmd{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

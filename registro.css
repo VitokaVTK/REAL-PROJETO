@@ -92,16 +92,19 @@ body {
     outline: none;
 }
 
-.botao-cadastro{
+.botao-cadastro {
     width: 200px;
     height: 30px;
     font-size: 15px;
     border: none;
     border-radius: 30px;
-    cursor: pointer;
     background-color: #1ABC9C;
     color: #FFFFFF;
-    
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 
